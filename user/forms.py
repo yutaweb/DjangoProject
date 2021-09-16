@@ -33,3 +33,4 @@ class LoginForm(forms.Form):
         confirm_password = cleaned_data['confirm_password']
         if password != confirm_password:
             raise forms.ValidationError('パスワードが一致しません。')
+
